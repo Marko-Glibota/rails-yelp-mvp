@@ -11,3 +11,120 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+body {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+h1 {
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #EC7263;
+  font-size: 56;
+}
+
+.header {
+  background-color: #57385C;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > p {
+  margin-right: 20px;
+}
+
+.menu a, .menu a:hover {
+  color: #fff;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.item-card {
+  border: solid 1px #00000033;
+  border-radius: 3px;
+  padding: 20px 35px;
+  box-shadow: 1px 1px 1px #00000033;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.item-card:hover {
+  background-color: #EC7263;
+  border: none;
+}
+
+.item-card:hover a {
+  color: #fff;
+}
+
+.item-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-purple {
+  background-color: #57385C;
+  border: none;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn-purple:hover {
+  background-color: #57385cd9;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list li {
+  margin-right: 5px;
+}
+
+.btn-reverse {
+  border: solid 1px #EC7263;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #EC7263;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.btn-reverse:hover {
+  background-color: #EC7263;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.aligned-btn {
+  display: flex;
+  margin-top: 40px;
+}

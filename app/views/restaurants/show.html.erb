@@ -1,0 +1,19 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+
+  <p><strong>Address:</strong> <%= @restaurant.address %></p>
+  <p><strong>Category:</strong> <%= @restaurant.category %></p>
+
+  <p><strong>Reviews:</strong></p>
+  <ul>
+    <% @restaurant.reviews.each do |review| %>
+      <li><%= review.content %> | <%= review.rating %></li>
+    <% end %>
+  </ul>
+
+  <div class="aligned-btn">
+    <p><%= link_to "Rate this restaurant", new_restaurant_review_path(@restaurant), class: "btn-reverse" %></p>
+
+    <p><%= link_to "Back to the list", restaurants_path%></p>
+  </div>
+</div>
